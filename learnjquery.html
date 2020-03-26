@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Practice jQuery :)</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+/*Starting with jQuery eg1*/
+function hideAllH2(){
+$('h2').fadeToggle();
+}
+
+function hideAllH2BasedOnId(){
+$('#fh2').fadeToggle();
+}
+
+function hideAllH2BasedOnClass(){
+$('.head2').fadeToggle();
+}
+
+function hideFirstH2(){
+$('h2:first').fadeToggle();
+}
+/*eg1 ends*/
+
+</script>
+<link rel='stylesheet' href='styles.css'/>
+</head>
+<body>
+<h2 class='head2' id ='fh2'>First H2</h2>
+<h2 class='head2' id ='sh2'>Second H2</h2>
+<h2 class='head2Last' id ='th2'>Third H2</h2>
+<br>
+
+<button id='btn1' onClick='hideAllH2()'>Hide all h2</button><br>
+<button id='btn1' onClick='hideAllH2BasedOnId()'>Hide h2 with id fh2</button><br>
+<button id='btn1' onClick='hideAllH2BasedOnClass()'>hide all h2 having class head2</button><br>
+<button id='btn1' onClick='hideFirstH2()'>hide first h2</button><br>
+</body>
+
+</html>

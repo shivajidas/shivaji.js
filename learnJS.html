@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Practice :)</title>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+/*example of simple js hello world start*/
+var str='Hello World!!'
+var num=1;
+function printHello(){
+document.write('The page says str is :'+str);
+document.write('</br>');
+document.write('The page says num is :'+num +'<br>');
+}
+/*printHello();*/
+/*example of simple js hello world ends*/
+
+/*example of simple js object defination start approach 1*/
+var car={
+brand:'tesla',/*attributes of the object*/
+year:'2020',
+color:'red',
+teslaCarFun: function(){
+return 'Inside the class method';
+}
+}
+/*document.write('Print color of the car ::'+ car.color +'<br>');*/
+/*document.write('Call the method of the class '+ car.teslaCarFun() +'<br>');*/
+/*example of simple js object defination end approach 1*/
+
+/*example of simple js object defination start approach 2 (better)*/
+function Cars(car_brand,car_year,car_color){
+this.car_brand=car_brand;
+this.car_year=car_year;
+this.car_color=car_color;
+
+this.teslaCarBrand=function(){
+document.write('Inside apprach 2 method of class cars '+car_brand+'<br>');
+}
+}
+
+var c1=new Cars('Tesla','2020','Red');
+document.write('Print brand of the car ::'+ c1.car_brand +'<br>');
+var c2=new Cars('Maruti','2019','Red');
+c2.teslaCarBrand();
+
+c2.carNewAttribute='new attribute added outside class defination';
+document.write('Add new attribute of the car ::'+ c2.carNewAttribute +'<br>');
+document.write('Delete old attribute of the car object ouside defination :: <br>');
+/*reference video https://www.youtube.com/watch?v=U08iJitN2ao&list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV&index=20 */
+delete c2.car_brand;
+document.write('Car brand after deleting the attribute ::'+ c2.car_brand+'<br>');
+/*example of simple js object defination end approach 2*/
+</script>
+</head>
+<body>
+Practice ground for JS..!!!!
+com[pleted till video 33
+</body>
+
+</html>
